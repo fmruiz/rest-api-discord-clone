@@ -1,0 +1,23 @@
+{
+  "name": "restapi-discord",
+  "version": "1.0.0",
+  "description": "rest-api-discord-clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmruiz/rest-api-discord-clone.git"
+  },
+  "author": "francoR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmruiz/rest-api-discord-clone/issues"
+  },
+  "homepage": "https://github.com/fmruiz/rest-api-discord-clone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

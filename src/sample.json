@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "FrancoDev",
+        "isAdmin": true,
+        "isBot": false
+    },
+    {
+        "id": 2,
+        "name": "Rythm",
+        "isAdmin": false,
+        "isBot": true
+    },
+    {
+        "id": 3,
+        "name": "ElonX",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 4,
+        "name": "Mr.Jeff",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 5,
+        "name": "Galpe",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 6,
+        "name": "markZ",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 7,
+        "name": "Gates",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 8,
+        "name": "jackTWT",
+        "isAdmin": false,
+        "isBot": false
+    },
+    {
+        "id": 9,
+        "name": "larry",
+        "isAdmin": false,
+        "isBot": false
+    }
+]

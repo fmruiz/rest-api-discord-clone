@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const app = express();
 
 // settings
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 3500);
 app.set("json spaces", 2);
 
 // middlewares
@@ -12,9 +12,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // routes
-app.get("/", (req, res) => {
-  res.json({ hola: "mundo" });
-});
+app.use(require("./routes/index"));
+app.use("/api/users", require("./routes/users"));
 
 // starting the server
 app.listen(app.get("port"), () => {

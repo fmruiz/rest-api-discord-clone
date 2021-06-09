@@ -1,0 +1,42 @@
+[
+    {   
+        "id": 1,
+        "nameGroup": "The Boyz"
+    },
+    {   
+        "id": 2,
+        "nameGroup": "Fenix"
+    },
+    {   
+        "id": 3,
+        "nameGroup": "Tesla"
+    },
+    {   
+        "id": 4,
+        "nameGroup": "Microsoft"
+    },
+    {   
+        "id": 5,
+        "nameGroup": "Google"
+    },
+    {   
+        "id": 6,
+        "nameGroup": "Mercado Libre"
+    },
+    {   
+        "id": 7,
+        "nameGroup": "Apple"
+    },
+    {   
+        "id": 8,
+        "nameGroup": "Samsung"
+    },
+    {   
+        "id": 9,
+        "nameGroup": "Nvidia"
+    },
+    {   
+        "id": 10,
+        "nameGroup": "Epic games"
+    }
+]

@@ -1,10 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
-const users = require("../users.json");
+const groups = require("../groups.json");
 
 router.get("/", (req, res) => {
-  res.json(users);
+  res.json(groups);
 });
 
 module.exports = router;

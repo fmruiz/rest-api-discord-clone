@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+// enviroment var
+require("dotenv/config");
+
 // arrays information
 let groups = require("./groups.json");
 let users = require("./users.json");

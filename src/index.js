@@ -84,7 +84,4 @@ app.post("/api/groups", (req, res) => {
 });
 
 // start server
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.set('port', process.env.PORT || 3000);

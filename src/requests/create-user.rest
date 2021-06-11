@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/users 
+Content-type: application/json
+
+# example
+{
+    "name": "NewUser",
+    "isAdmin": false,
+    "isBot": false
+}

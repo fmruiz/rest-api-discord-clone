@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+
 // arrays information
 let groups = require("./groups.json");
 let users = require("./users.json");
+
+// JSON Parser
+app.use(express.json());
 
 // routes
 app.get("/", (req, res) => {
@@ -30,6 +34,20 @@ app.delete("/api/users/:id", (req, res) => {
   users = users.filter((user) => user.id !== id);
   // validation
   res.status(204).end();
+});
+
+app.post("/api/users", (req, res) => {
+  const user = req.body;
+  const ids = users.map((user) => user.id);
+  const maxId = Math.max(...ids);
+  const newUser = {
+    id: maxId + 1,
+    name: user.name,
+    isAdmin: user.isAdmin,
+    isBot: user.isBot,
+  };
+  users = [...users, newUser];
+  res.json(newUser);
 });
 
 // groups route

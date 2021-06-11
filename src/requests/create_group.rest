@@ -1,4 +1,4 @@
-POST http://localhost:3001/api/groups
+POST http://localhost:2000/api/groups
 Content-Type: application/json
 
 {

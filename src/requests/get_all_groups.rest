@@ -1,1 +1,1 @@
-GET http://localhost:3001/api/groups
+GET http://localhost:2000/api/groups

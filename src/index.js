@@ -32,7 +32,6 @@ app.get("/api/users/:id", (req, res) => {
 app.delete("/api/users/:id", (req, res) => {
   const id = Number(req.params.id);
   users = users.filter((user) => user.id !== id);
-  // validation
   res.status(204).end();
 });
 
@@ -56,7 +55,32 @@ app.get("/api/groups", (req, res) => {
 });
 
 app.get("/api/groups/:id", (req, res) => {
-  res.json(groups);
+  const id = Number(req.params.id);
+  const group = groups.find((group) => group.id === id);
+  // validation
+  if (group) {
+    res.json(group);
+  } else {
+    res.status(404).end();
+  }
+});
+
+app.delete("/api/groups/:id", (req, res) => {
+  const id = Number(req.params.id);
+  groups = groups.filter((group) => group.id !== id);
+  res.status(204).end();
+});
+
+app.post("/api/groups", (req, res) => {
+  const group = req.body;
+  const ids = groups.map((group) => group.id);
+  const maxId = Math.max(...ids);
+  const newGroup = {
+    id: maxId + 1,
+    nameGroup: group.nameGroup,
+  };
+  groups = [...groups, newGroup];
+  res.json(newGroup);
 });
 
 // start server

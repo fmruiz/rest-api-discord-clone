@@ -11,6 +11,7 @@ require("dotenv/config");
 let groups = require("./groups.json");
 let users = require("./users.json");
 let textChannels = require("./textChannels.json");
+let voiceChannels = require('./voiceChannels.json')
 
 // JSON Parser
 app.use(express.json());
@@ -93,6 +94,11 @@ app.post("/api/groups", (req, res) => {
 // text channels route
 app.get("/api/text-channels", (req, res) => {
   res.json(textChannels);
+});
+
+// voice channels route
+app.get("/api/voice-channels", (req, res) => {
+  res.json(voiceChannels);
 });
 
 // start server

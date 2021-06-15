@@ -10,6 +10,7 @@ require("dotenv/config");
 // arrays information
 let groups = require("./groups.json");
 let users = require("./users.json");
+let textChannels = require("./textChannels.json");
 
 // JSON Parser
 app.use(express.json());
@@ -87,6 +88,11 @@ app.post("/api/groups", (req, res) => {
   };
   groups = [...groups, newGroup];
   res.json(newGroup);
+});
+
+// text channels route
+app.get("/api/text-channels", (req, res) => {
+  res.json(textChannels);
 });
 
 // start server

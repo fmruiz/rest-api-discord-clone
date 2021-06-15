@@ -1,0 +1,18 @@
+[
+    {   
+        "id": 1,
+        "name": "welcome"
+    },
+    {   
+        "id": 2,
+        "name": "general-chat"
+    },
+    {   
+        "id": 3,
+        "name": "music-requests"
+    },
+    {   
+        "id": 4,
+        "name": "memes"
+    }
+]
